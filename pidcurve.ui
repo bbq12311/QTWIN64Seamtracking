@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pidcurve</class>
+ <widget class="QDockWidget" name="pidcurve">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QCustomPlot" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>421</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSliderAMin">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>330</y>
+      <width>421</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="verticalSliderAMax">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>22</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCW">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清除</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>131</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

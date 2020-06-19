@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manual</class>
+ <widget class="QDockWidget" name="manual">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>297</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>561</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBoxRotateDirSelect">
+       <property name="title">
+        <string>旋向选择</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QRadioButton" name="radioButtonCW">
+          <property name="text">
+           <string>正向</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonCCW">
+          <property name="text">
+           <string>反向</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBoxMotionMode">
+       <property name="title">
+        <string>运动模式选择</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="radioButtonCntnsMode">
+          <property name="text">
+           <string>连续运动</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonFixedMode">
+          <property name="text">
+           <string>定长运动</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBoxMotionParaMeter">
+       <property name="title">
+        <string>运动参数选择</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelDistance">
+          <property name="text">
+           <string>移动距离</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEditDistanceSetting"/>
+        </item>
+        <item row="0" column="2" colspan="2">
+         <widget class="QLabel" name="labelDistanceUnit">
+          <property name="text">
+           <string>距离（mm）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelHighestSpeed">
+          <property name="text">
+           <string>最高速度</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEditHighestSpeedValue"/>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="labelSpeedUnit">
+          <property name="text">
+           <string>毫米（mm/s）</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>342</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButtonStart">
+       <property name="text">
+        <string>启动Ctrl+Enter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonStop">
+       <property name="text">
+        <string>制动Ctrl+S</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonReturnOrigin">
+       <property name="text">
+        <string>回原点Crtl+B</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonQuit">
+       <property name="text">
+        <string>退出Ctrl+Q</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

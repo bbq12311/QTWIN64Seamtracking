@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>weld</class>
+ <widget class="QDockWidget" name="weld">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QPushButton" name="pushButtonConfirm">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>290</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCancel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>290</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>30</y>
+      <width>381</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="labelWeldSpeed">
+         <property name="text">
+          <string>焊接速度：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelGasFlow">
+         <property name="text">
+          <string>保护气流量：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelWeldVoltage">
+         <property name="text">
+          <string>焊接电压：</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="lineEditWeldSpeed"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEditGasFlow"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLineEdit" name="lineEditWeldVoltage"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="unitWeldSpeed">
+         <property name="text">
+          <string>毫米（mm/s）</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="unitGasFlow">
+         <property name="text">
+          <string>升/分（L/min）</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="unitWeldVoltage">
+         <property name="text">
+          <string>伏（V）</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>371</width>
+      <height>115</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="labelWeldDistance">
+         <property name="text">
+          <string>焊接长度：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelWireRate">
+         <property name="text">
+          <string>送丝速度：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelWeldCurrent">
+         <property name="text">
+          <string>焊接电流：</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="lineEditWeldDistance"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditWireRate"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditWeldCurrent"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="unitWeldDistance">
+         <property name="text">
+          <string>毫米（mm）</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="unitWireRate">
+         <property name="text">
+          <string>米/分（m/min)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="unitWeldCurrent">
+         <property name="text">
+          <string>安（A)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

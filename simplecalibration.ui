@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>simplecalibration</class>
+ <widget class="QWidget" name="simplecalibration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>209</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>141</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="labelBlockWidth">
+      <property name="text">
+       <string>标定块物理尺寸：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelBlockWidthPixel">
+      <property name="text">
+       <string>标定块像素尺寸：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelHorizontalCalibrationRatio">
+      <property name="text">
+       <string>水平标定比率：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>149</x>
+     <y>30</y>
+     <width>151</width>
+     <height>113</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="lineEditBlockWidth"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditBlockWidthPixel"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditHorizontalCalibrationRatio"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="labelUnitMM">
+      <property name="text">
+       <string>mm</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelUnitPixel">
+      <property name="text">
+       <string>pix</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonGetBlockWidthPixel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>获取数据</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCalculate">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>160</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>计算</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQuit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>160</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

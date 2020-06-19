@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>camera</class>
+ <widget class="QDockWidget" name="camera">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>495</width>
+      <height>284</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBoxISP">
+         <property name="title">
+          <string>ISP</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="labelContrast">
+              <property name="text">
+               <string>Contrast</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sliderContrast">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelContrastValue">
+              <property name="text">
+               <string>null</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QCheckBox" name="checkBoxExposure">
+              <property name="text">
+               <string>Auto</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelExposure">
+              <property name="text">
+               <string>Exposure</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="horizontalSliderExposure">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelExposureValue">
+              <property name="text">
+               <string>null</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QCheckBox" name="checkBoxGain">
+              <property name="text">
+               <string>Auto</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelGain">
+              <property name="text">
+               <string>Gain</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="horizontalSliderGain">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelGainValue">
+              <property name="text">
+               <string>null</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="labelGamma">
+              <property name="text">
+               <string>Gamma</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="horizontalSliderGamma">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelGammaValue">
+              <property name="text">
+               <string>null</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="labelSaturation">
+              <property name="text">
+               <string>Saturation</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="horizontalSliderSaturation">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelSaturationValue">
+              <property name="text">
+               <string>null</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonWhiteBalance">
+         <property name="text">
+          <string>一键白平衡</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="labelChangeResolution">
+           <property name="text">
+            <string>变更相机分辨率</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cmbCameraResolution"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBoxSaveLoad">
+       <property name="title">
+        <string>Save and Load</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButtonLoadCameraConfiguration">
+            <property name="text">
+             <string>载入相机配置</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonSaveCameraConfiguration">
+            <property name="text">
+             <string>保存相机配置</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonSaveSingleImage">
+            <property name="text">
+             <string>保存单张图片</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButtonSaveMultipleImages">
+              <property name="text">
+               <string>保存连续多张图片</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonStopSaving">
+              <property name="text">
+               <string>停止保存</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
